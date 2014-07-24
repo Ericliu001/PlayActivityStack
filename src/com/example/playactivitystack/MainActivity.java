@@ -1,5 +1,7 @@
 package com.example.playactivitystack;
 
+import com.example.playactivitystack.util.IntentFactory;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,9 +30,11 @@ public class MainActivity extends Activity {
 		Intent intent;
 		switch (view.getId()) {
 		case R.id.btLogin:
-			 intent = new Intent(MainActivity.this, LoginActivity.class);
-			 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // this flag is only useful in conjunction with the <launchMode> setting
-			startActivity(intent);
+//			 intent = new Intent(MainActivity.this, LoginActivity.class);
+//			 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // this flag is only useful in conjunction with the <launchMode> setting
+//			startActivity(intent);
+			
+			IntentFactory.startLogin(this);
 			break;
 
 		case R.id.btNext:

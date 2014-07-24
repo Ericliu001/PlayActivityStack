@@ -1,5 +1,7 @@
 package com.example.playactivitystack;
 
+import com.example.playactivitystack.util.IntentFactory;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,7 +31,7 @@ public class LoginActivity extends Activity {
 		Log.i("eric", "login activity created");
 	}
 
-	public void onButtonClicked(View view) {
+	public void onButtonClicked(View view) throws ClassNotFoundException {
 
 		switch (view.getId()) {
 		case R.id.btOne:
@@ -59,12 +61,18 @@ public class LoginActivity extends Activity {
 			intent3.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 			startActivity(intent3);
 			break;
+			
+		case R.id.btBack:
+			IntentFactory.goBackToActivityWhoStartedMe(this);
+			break;
 
 		default:
 			break;
 		}
 
 	}
+	
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

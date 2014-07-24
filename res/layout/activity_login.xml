@@ -39,4 +39,11 @@
         android:onClick="onButtonClicked"
         android:text="Three" />
 
+     <Button
+         android:id="@+id/btBack"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:onClick="onButtonClicked"
+         android:text="Go Back to Activity" />
+
 </LinearLayout>
