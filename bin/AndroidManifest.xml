@@ -32,9 +32,21 @@
         </activity>
         <activity
             android:name=".LoginActivity"
+            android:label="@string/title_activity_fourth"
             android:launchMode="singleInstance"
-            android:taskAffinity="com.example.playactivitystack.another"
-            android:label="@string/title_activity_fourth" >
+            android:taskAffinity="com.example.playactivitystack.another" >
+        </activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:label="@string/title_activity_payment"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.example.playactivitystack.payment" >
+        </activity>
+        <activity
+            android:name=".ReceiptActivity"
+            android:label="@string/title_activity_receipt"
+            
+             >
         </activity>
     </application>
 

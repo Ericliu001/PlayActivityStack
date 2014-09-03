@@ -28,15 +28,18 @@ public class ThirdActivity extends Activity {
 	
 	public void onButtonClicked(View view){
 		
-		
 		switch (view.getId()) {
 		case R.id.btLogin:
-			Intent intent = new Intent(ThirdActivity.this, LoginActivity.class);
-			 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			startActivity(intent);
+			 Intent intent1 = new Intent(ThirdActivity.this, LoginActivity.class);
+			 intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			startActivity(intent1);
 			break;
 
-
+		case R.id.btPayment:
+			 Intent intent2 = new Intent(ThirdActivity.this, PaymentActivity.class);
+			intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			startActivity(intent2);
+			break;
 		default:
 			break;
 		}

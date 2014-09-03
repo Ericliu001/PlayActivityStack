@@ -7,5 +7,7 @@
     <string name="title_activity_second">SecondActivity</string>
     <string name="title_activity_third">ThirdActivity</string>
     <string name="title_activity_fourth">FourthActivity</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="title_activity_receipt">ReceiptActivity</string>
 
 </resources>
